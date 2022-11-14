@@ -7,10 +7,10 @@ add_action( 'quform_pre_display_1', function ( Quform_Form $form ) {
 	$element = $form->getElement( 'quform_1_2' );
 
 	if ( $element instanceof Quform_Element_Multi ) {
-      $options = array(); 
-			$options[] = array( 'label' => 'Test', 'value' => 'test', 'id' => '1' );
-			$options[] = array( 'label' => 'Test 2', 'value' => 'test-2', 'id' => '2' );
-		  $element->setOptions( $options );
+		$options   = array();
+		$options[] = array( 'label' => 'Test', 'value' => 'test', 'id' => '1' );
+		$options[] = array( 'label' => 'Test 2', 'value' => 'test-2', 'id' => '2' );
+		$element->setOptions( $options );
 	}
 } );
 ```
